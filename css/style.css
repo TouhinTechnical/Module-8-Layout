@@ -1,0 +1,212 @@
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 2px dotted saddlebrown;
+    height: 200px;
+}
+h1{
+    text-align: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 3px dashed rebeccapurple;
+    text-transform: capitalize;
+    font-size: 2em;
+}
+#flex_grow{
+    flex-grow: 1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: brown;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    margin-right: 15px;
+}
+span .fas{
+    color: brown;
+    margin-right: 5px;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+:focus{
+    outline: 0;
+}
+.login-form input,
+button{
+    font-size: 1em;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.login-form button{
+    background: orange;
+    color: whitesmoke;
+    font-weight: 700;
+    border: 0;
+    padding: 5px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+
+}
+.grid-cell{
+    border: 1px solid goldenrod;
+}
+.item1{
+    grid-row: 1/4;
+}
+.layout-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+}
+.layout-cell{
+    border: 1px solid firebrick;
+    background: #ff00eaf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell1{
+    grid-row: 1/5;
+}
+.cell2{
+    grid-column: 2/7;
+}
+.cell3{
+    grid-row: 2/4;
+}
+.cell4{
+    grid-row: 2/4;
+}
+.cell5{
+    grid-column: 4/7;
+}
+.cell6{
+    grid-column: 4/7;
+}
+.cell7{
+    grid-column: 2/7;
+}
+.calender_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calender{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 2em repeat(5, 1fr);
+    grid-gap: .5em;
+    width: 400px;
+    height: 200px;
+}
+.date,
+.day{
+    background: lightslategray;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.other_month,
+.day{
+    background: lightgrey;
+}
+.day{
+    font-size: 1em;
+}
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    max-width: 100%;
+}
+.food{
+    border: 3px solid rosybrown;
+    width: 300px;
+    margin: 10px;
+}
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.photo-frame{
+    position: relative;
+    width: 300px;
+    height: 168px;
+    border: 1px solid #ff00ea;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+.photo-img img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.photo-details{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+    color: #01030a;
+    padding: 0 10px;
+}
+.photo-frame:hover .photo-details {
+    display: block;
+    background: rgba(255, 0, 234,.3);
+    width: 280px;
+    height: 168px;
+    border-radius: 10px;
+}
+.photo-frame:hover .photo-img{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transition: transform 2s ease-in-out;
+    -webkit-transition: transform 2s ease-in-out;
+    -moz-transition: transform 2s ease-in-out;
+    -ms-transition: transform 2s ease-in-out;
+    -o-transition: transform 2s ease-in-out;
+}
